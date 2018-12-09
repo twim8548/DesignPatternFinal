@@ -23,11 +23,15 @@
             output += '<h3>경도 : ' + longitude + '</h3>';
             output += '<p>' + data.date + '</p>';
             $('<li></li>').append(output).prependTo('#listview');
+            
+            /*
             // 문서 객체 개수 제한
             var content = $('#content');
             if (content.children().length > 7) {
               content.children().last().remove();
             }
+            */
+            
             //새로고침
             $('#listview').listview('refresh');
           });
